@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovementLeftRight : MonoBehaviour
 {
     [SerializeField] private float speed;
-    [SerializeField] private float puissanceSaut;
     private Rigidbody2D body;
 
     private void Awake()
@@ -23,10 +22,10 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = Vector3.one;
         else if (horizontalInput < 0.01f)
             transform.localScale = new Vector3(-1, 1, 1);
-
-
-        if (Input.GetKey(KeyCode.UpArrow))
-            body.velocity = new Vector2(body.velocity.x, puissanceSaut);
     }
 
 }
+
+
+
+
