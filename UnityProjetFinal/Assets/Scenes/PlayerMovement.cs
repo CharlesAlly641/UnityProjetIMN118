@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float speed;
+    [SerializeField] private float puissanceSaut;
     private Rigidbody2D body;
 
     private void Awake()
@@ -23,8 +24,9 @@ public class PlayerMovement : MonoBehaviour
         else if (horizontalInput < 0.01f)
             transform.localScale = new Vector3(-1, 1, 1);
 
-        if (Input.GetKey(KeyCode.Space))
-            body.velocity = new Vector2(body.velocity.x, speed);
+
+        if (Input.GetKey(KeyCode.UpArrow))
+            body.velocity = new Vector2(body.velocity.x, puissanceSaut);
     }
 
 }
