@@ -8479,7 +8479,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1184671169}
-  - component: {fileID: 1184671170}
   m_Layer: 0
   m_Name: Spikes
   m_TagString: Untagged
@@ -8516,19 +8515,6 @@ Transform:
   - {fileID: 758243948}
   m_Father: {fileID: 2042234285}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1184671170
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1184671168}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f1dc5df04d0cc94c87e936e553c65a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 1
 --- !u!4 &1202304715 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4653831799294361326, guid: 7903d081236f2304396572efb80b5f8f, type: 3}
