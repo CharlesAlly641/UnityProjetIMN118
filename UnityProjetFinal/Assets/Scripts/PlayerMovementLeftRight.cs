@@ -19,9 +19,9 @@ public class PlayerMovementLeftRight : MonoBehaviour
 
         //Change le personnage de gauche selon la gauche ou la droite
         if (horizontalInput > 0.01f)
-            transform.localScale = Vector3.one;
-        else if (horizontalInput < 0.01f)
-            transform.localScale = new Vector3(-1, 1, 1);
+            transform.localScale = new Vector3(2, 2, 2);
+        else if (horizontalInput < -0.01f)
+            transform.localScale = new Vector3(-2, 2, 2);
     }
 
 }
