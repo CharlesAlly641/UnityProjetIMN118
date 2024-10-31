@@ -6,10 +6,12 @@ public class PlayerMovementLeftRight : MonoBehaviour
 {
     [SerializeField] private float speed;
     private Rigidbody2D body;
+    private Animator anim;
 
     private void Awake()
     {
         body = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     private void Update()
@@ -19,9 +21,12 @@ public class PlayerMovementLeftRight : MonoBehaviour
 
         //Change le personnage de gauche selon la gauche ou la droite
         if (horizontalInput > 0.01f)
-            transform.localScale = new Vector3(2, 2, 2);
+            transform.localScale = new Vector3(0.75f, 0.75f, 0.75f);
         else if (horizontalInput < -0.01f)
-            transform.localScale = new Vector3(-2, 2, 2);
+            transform.localScale = new Vector3(-0.75f, 0.75f, 0.75f);
+
+        anim.SetBool("run", horizontalInput != 0);
+        
     }
 
 }
