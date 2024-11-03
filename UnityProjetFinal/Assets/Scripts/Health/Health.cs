@@ -21,7 +21,7 @@ public class Health : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // Vérifiez que l'objet en collision a le tag "Enemy" (ou un autre tag)
-        if (collision.gameObject.CompareTag("Spikes"))
+        if (collision.gameObject.CompareTag("Ennemis"))
         {
             TakeDamage(1); // Par exemple, le joueur perd 1 point de vie
         }
