@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement; // Pour charger la scène de Game Over
 
 public class Health : MonoBehaviour
 {
@@ -15,6 +16,10 @@ public class Health : MonoBehaviour
     public void TakeDamage(float _damage)
     {
         currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
+        if (currentHealth == 0)
+        {
+            GameOver();
+        }
     }
 
 
@@ -25,6 +30,14 @@ public class Health : MonoBehaviour
         {
             TakeDamage(1); // Par exemple, le joueur perd 1 point de vie
         }
+    }
+
+    private void GameOver()
+    {
+        // Désactive le personnage
+        gameObject.SetActive(false);
+        // Charge la scène de Game Over
+        SceneManager.LoadScene("GameOverScene"); // Assurez-vous que vous avez une scène nommée "GameOverScene"
     }
 
 }

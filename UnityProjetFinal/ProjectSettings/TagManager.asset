@@ -8,6 +8,9 @@ TagManager:
   - Background
   - Spikes
   - Ennemis
+  - Checkpoint
+  - Debut
+  - debut
   layers:
   - Default
   - TransparentFX
