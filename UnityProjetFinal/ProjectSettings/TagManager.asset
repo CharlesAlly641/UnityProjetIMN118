@@ -9,8 +9,9 @@ TagManager:
   - Spikes
   - Ennemis
   - Checkpoint
-  - Debut
   - debut
+  - End
+  - MustObject
   layers:
   - Default
   - TransparentFX
