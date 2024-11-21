@@ -22,6 +22,11 @@ public class Health : MonoBehaviour
         }
     }
 
+    public void GainHealth(float _value)
+    {
+        currentHealth = Mathf.Clamp(currentHealth + _value, 0, startingHealth);
+    }
+
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -29,6 +34,11 @@ public class Health : MonoBehaviour
         if (collision.gameObject.CompareTag("Ennemis"))
         {
             TakeDamage(1); // Par exemple, le joueur perd 1 point de vie
+        }
+        else if (collision.gameObject.CompareTag("Health"))
+        {
+            GainHealth(1); // Le joueur gagne 1 point de vie
+            Destroy(collision.gameObject); // Supprime l'objet de la scène
         }
     }
 

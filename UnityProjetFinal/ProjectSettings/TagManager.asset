@@ -12,6 +12,10 @@ TagManager:
   - debut
   - End
   - MustObject
+  - Health
+  - Ladder
+  - Platform
+  - coin
   layers:
   - Default
   - TransparentFX
