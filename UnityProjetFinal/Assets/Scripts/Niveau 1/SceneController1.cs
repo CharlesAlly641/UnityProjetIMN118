@@ -1,11 +1,13 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneController : MonoBehaviour
+public class SceneController1 : MonoBehaviour
 {
-    public static SceneController instance;
+    public static SceneController1 instance;
 
-    private void Awake()
+    public void Awake()
     {
         if (instance == null)
         {
@@ -16,6 +18,7 @@ public class SceneController : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
     }
 
     public void NextLevel()
