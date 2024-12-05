@@ -1,18 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class VictoryPopup : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject victoryCanvas; // Référence au Canvas de victoire
 
-    // Update is called once per frame
-    void Update()
+    public void ShowVictoryPopup()
     {
-        
+        Time.timeScale = 0f; // Pause le jeu
+        victoryCanvas.SetActive(true); // Affiche le canvas
     }
 }
