@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Niveau1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/Niveau2.unity
+    guid: e799dbea276e3c34ebef2956c72f4704
+  - enabled: 1
+    path: Assets/Scenes/Niveau3-AlexyOrdi.unity
+    guid: fd750a58e5bc65141b561b3dd40c7536
+  - enabled: 1
     path: Assets/Scenes/GameOverScene.unity
     guid: 4f019486ec01a5c47bb92b7d7d382732
   m_configObjects: {}
