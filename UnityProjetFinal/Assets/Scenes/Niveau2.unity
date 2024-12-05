@@ -3948,7 +3948,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 590, y: 91}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &675177987
@@ -5026,6 +5026,7 @@ GameObject:
   - component: {fileID: 855160050}
   - component: {fileID: 855160052}
   - component: {fileID: 855160053}
+  - component: {fileID: 855160054}
   m_Layer: 0
   m_Name: Golden Key
   m_TagString: MustObject
@@ -5157,6 +5158,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &855160054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 855160049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61838b5a4cc556c45b53b75c3d508633, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &869311968
 GameObject:
   m_ObjectHideFlags: 0
@@ -6016,6 +6029,7 @@ GameObject:
   - component: {fileID: 981882329}
   - component: {fileID: 981882330}
   - component: {fileID: 981882331}
+  - component: {fileID: 981882332}
   m_Layer: 0
   m_Name: Personnage
   m_TagString: Player
@@ -6195,7 +6209,7 @@ Transform:
   m_GameObject: {fileID: 981882320}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.64, y: -4.41, z: 0}
+  m_LocalPosition: {x: -8.99, y: -4.21, z: 0}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6257,6 +6271,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 53023a9f916ed7047bc538b776a636c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &981882332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981882320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c688475e6ef74504eb6e9a59af731964, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &990473238
@@ -7940,7 +7966,7 @@ Transform:
   m_GameObject: {fileID: 1348123037}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.7871423, y: -4.38736, z: -10}
+  m_LocalPosition: {x: -3.072927, y: -4.18509, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9757,7 +9783,7 @@ Transform:
   m_GameObject: {fileID: 1519937295}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.64, y: -4.41, z: -10}
+  m_LocalPosition: {x: -8.99, y: -4.21, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
