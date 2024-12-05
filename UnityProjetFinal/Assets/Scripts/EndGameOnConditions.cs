@@ -24,7 +24,7 @@ public class EndGameOnConditions : MonoBehaviour
         if (mustObject == null)
         {
             // Vérifier si la position du personnage est la même que celle de "End"
-            if ((endObject == null) || (endObject != null && Vector2.Distance(transform.position, endObject.transform.position) < 0.5f))
+            if ((endObject == null) || (endObject != null && Vector2.Distance(transform.position, endObject.transform.position) < 1.0f))
             {
                 EndGame();
             }

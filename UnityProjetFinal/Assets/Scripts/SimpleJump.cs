@@ -43,7 +43,7 @@ public class SimpleJump : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         // Détecte si le joueur touche le sol
-        if (collision.contacts.Length > 0 && collision.collider.CompareTag("Ground"))
+        if (collision.contacts.Length > 0 && (collision.collider.CompareTag("Ground") || collision.collider.CompareTag("wall")))
         {
             isGrounded = true;
         }
