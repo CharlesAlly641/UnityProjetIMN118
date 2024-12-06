@@ -340,7 +340,7 @@ Transform:
   m_GameObject: {fileID: 14277620}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.84204865, y: -3.49528, z: -10}
+  m_LocalPosition: {x: 0.8620291, y: -3.49528, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2712,6 +2712,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f26238e686bf825429de59d9970267f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickupSFX: {fileID: 8300000, guid: 6186aec84995df148868f2fb90ebc584, type: 3}
+  soundPlayerPrefab: {fileID: 7581808549131150214, guid: 0941dc6241a04d6498a4eae2d0b33425, type: 3}
 --- !u!114 &296879585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4015,7 +4017,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -4110,6 +4112,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f26238e686bf825429de59d9970267f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickupSFX: {fileID: 8300000, guid: 6186aec84995df148868f2fb90ebc584, type: 3}
+  soundPlayerPrefab: {fileID: 7581808549131150214, guid: 0941dc6241a04d6498a4eae2d0b33425, type: 3}
 --- !u!1 &484442010
 GameObject:
   m_ObjectHideFlags: 0
@@ -6581,6 +6585,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f26238e686bf825429de59d9970267f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickupSFX: {fileID: 8300000, guid: dd56970966b4a7141a76f803d807feab, type: 3}
+  soundPlayerPrefab: {fileID: 7581808549131150214, guid: 0941dc6241a04d6498a4eae2d0b33425, type: 3}
 --- !u!114 &906560273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7783,7 +7789,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -7811,6 +7817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 237d0a1c83e28e44fbd408a954c81009, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unlockSFX: {fileID: 8300000, guid: fa5bf07beeb1c83418c1b0b26b8c0c03, type: 3}
 --- !u!1 &1181119247
 GameObject:
   m_ObjectHideFlags: 0
@@ -9018,6 +9025,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f26238e686bf825429de59d9970267f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickupSFX: {fileID: 8300000, guid: 6186aec84995df148868f2fb90ebc584, type: 3}
+  soundPlayerPrefab: {fileID: 7581808549131150214, guid: 0941dc6241a04d6498a4eae2d0b33425, type: 3}
 --- !u!61 &1318580143
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9047,7 +9056,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -9648,6 +9657,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f26238e686bf825429de59d9970267f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickupSFX: {fileID: 8300000, guid: dd56970966b4a7141a76f803d807feab, type: 3}
+  soundPlayerPrefab: {fileID: 7581808549131150214, guid: 0941dc6241a04d6498a4eae2d0b33425, type: 3}
 --- !u!114 &1405445233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10959,6 +10970,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f26238e686bf825429de59d9970267f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickupSFX: {fileID: 8300000, guid: dd56970966b4a7141a76f803d807feab, type: 3}
+  soundPlayerPrefab: {fileID: 7581808549131150214, guid: 0941dc6241a04d6498a4eae2d0b33425, type: 3}
 --- !u!114 &1567625420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11378,6 +11391,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f26238e686bf825429de59d9970267f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickupSFX: {fileID: 8300000, guid: eb470c94b39bf374eb201b5d1e8507ad, type: 3}
+  soundPlayerPrefab: {fileID: 7581808549131150214, guid: 0941dc6241a04d6498a4eae2d0b33425, type: 3}
 --- !u!1001 &1667087567
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12394,6 +12409,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f26238e686bf825429de59d9970267f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickupSFX: {fileID: 8300000, guid: dd56970966b4a7141a76f803d807feab, type: 3}
+  soundPlayerPrefab: {fileID: 7581808549131150214, guid: 0941dc6241a04d6498a4eae2d0b33425, type: 3}
 --- !u!114 &1797437685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13761,6 +13778,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f26238e686bf825429de59d9970267f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickupSFX: {fileID: 8300000, guid: dd56970966b4a7141a76f803d807feab, type: 3}
+  soundPlayerPrefab: {fileID: 7581808549131150214, guid: 0941dc6241a04d6498a4eae2d0b33425, type: 3}
 --- !u!114 &1951305225
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -5,6 +5,9 @@ public class BlockedPathway : MonoBehaviour
     private GameObject mustObject;
     private BoxCollider2D boxCollider;
 
+    public AudioClip unlockSFX; // Son de déverrouillage
+    private AudioSource audioSource;
+
     void Start()
     {
         // Trouver l'objet avec le tag "MustObject"
@@ -28,6 +31,16 @@ public class BlockedPathway : MonoBehaviour
         {
             boxCollider.isTrigger = false;
         }
+
+        // Ajouter ou récupérer un composant AudioSource
+        audioSource = gameObject.GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+
+        audioSource.playOnAwake = false;        // Ne pas jouer automatiquement
+
     }
 
     void Update()
@@ -45,7 +58,15 @@ public class BlockedPathway : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             Debug.Log("Le joueur a débloqué le chemin !");
-            Destroy(gameObject);
+
+            // Jouer le son de déverrouillage
+            if (unlockSFX != null)
+            {
+                audioSource.PlayOneShot(unlockSFX);
+            }
+
+            // Détruire l'objet bloquant après la durée du son 
+            Destroy(gameObject, unlockSFX != null ? unlockSFX.length : 0f);
         }
     }
 }
