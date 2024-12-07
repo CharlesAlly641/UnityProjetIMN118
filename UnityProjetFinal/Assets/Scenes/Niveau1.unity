@@ -938,6 +938,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10c1e246885d1b44a97818319b67aff7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  respawnSFX: {fileID: 8300000, guid: 0e305d611015b4c4ead663c51d4497cf, type: 3}
 --- !u!114 &95996239
 MonoBehaviour:
   m_ObjectHideFlags: 0
