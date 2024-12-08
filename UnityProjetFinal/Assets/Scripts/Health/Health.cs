@@ -5,16 +5,26 @@ using UnityEngine.SceneManagement; // Pour charger la scène de Game Over
 
 public class Health : MonoBehaviour
 {
+    [Header ("Health")]
     [SerializeField] private float startingHealth;
     public float currentHealth { get; private set; }
+
+    [Header ("iFrames")]
+    [SerializeField] private float iFramesDuration;
+    [SerializeField] private int numberOfFlashes;
+    private SpriteRenderer spriteRend;
 
     private void Awake()
     {
         currentHealth = startingHealth;
+        spriteRend = GetComponent<SpriteRenderer>();
     }
 
     public void TakeDamage(float _damage)
     {
+        if (currentHealth > 0){
+            StartCoroutine(Invulnerability());
+        }
         currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
         if (currentHealth == 0)
         {
@@ -48,6 +58,20 @@ public class Health : MonoBehaviour
         gameObject.SetActive(false);
         // Charge la scène de Game Over
         SceneManager.LoadScene("GameOverScene"); // Assurez-vous que vous avez une scène nommée "GameOverScene"
+    }
+
+    //Permet d'avoir un temps d'invulnérabilité après avoir pris un dégat
+    private IEnumerator Invulnerability()
+    {
+        Physics2D.IgnoreLayerCollision(7,8,true);
+        for (int i = 0; i < numberOfFlashes; i++)
+        {
+            spriteRend.color = new Color(1,0,0,0.5f);
+            yield return new WaitForSeconds(iFramesDuration/(numberOfFlashes*2));
+            spriteRend.color = Color.white;
+            yield return new WaitForSeconds(iFramesDuration/(numberOfFlashes*2));
+        }
+        Physics2D.IgnoreLayerCollision(7,8,false);
     }
 
 }

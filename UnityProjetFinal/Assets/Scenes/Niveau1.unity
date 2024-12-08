@@ -383,6 +383,10 @@ PrefabInstance:
       value: PF Village Props - Spike (2)
       objectReference: {fileID: 0}
     - target: {fileID: 1049023302621363167, guid: c4728654af6c1b84fb5102e3f29ffb8f, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1049023302621363167, guid: c4728654af6c1b84fb5102e3f29ffb8f, type: 3}
       propertyPath: m_TagString
       value: Ennemis
       objectReference: {fileID: 0}
@@ -710,9 +714,9 @@ GameObject:
   m_Component:
   - component: {fileID: 95996226}
   - component: {fileID: 95996234}
-  - component: {fileID: 95996227}
   - component: {fileID: 95996229}
   - component: {fileID: 95996228}
+  - component: {fileID: 95996227}
   - component: {fileID: 95996232}
   - component: {fileID: 95996233}
   - component: {fileID: 95996235}
@@ -720,7 +724,7 @@ GameObject:
   - component: {fileID: 95996239}
   - component: {fileID: 95996240}
   - component: {fileID: 95996241}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Personnage
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -853,6 +857,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 3
+  iFramesDuration: 1
+  numberOfFlashes: 3
 --- !u!212 &95996234
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1107,9 +1113,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 616649820}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -347, y: 476.4}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: -263, y: 443.4}
   m_SizeDelta: {x: 1225, y: 128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &115768535
@@ -4310,7 +4316,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.7843685, y: -0.08818, z: -10}
+  m_LocalPosition: {x: -6.4711776, y: -0.087979995, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -10211,9 +10217,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 616649820}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -347, y: 476.4}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: -263, y: 443.4}
   m_SizeDelta: {x: 1225, y: 128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1326396464
@@ -14732,6 +14738,10 @@ PrefabInstance:
     - target: {fileID: 1049023302621363167, guid: c4728654af6c1b84fb5102e3f29ffb8f, type: 3}
       propertyPath: m_Name
       value: PF Village Props - Spike
+      objectReference: {fileID: 0}
+    - target: {fileID: 1049023302621363167, guid: c4728654af6c1b84fb5102e3f29ffb8f, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1049023302621363167, guid: c4728654af6c1b84fb5102e3f29ffb8f, type: 3}
       propertyPath: m_TagString

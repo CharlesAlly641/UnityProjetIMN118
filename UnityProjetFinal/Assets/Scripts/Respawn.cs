@@ -29,10 +29,9 @@ public class Respawn : MonoBehaviour
         audioSource.playOnAwake = false; // Ne pas jouer de son automatiquement
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void Update()
     {
-        // Vérifie si l'objet avec lequel il y a collision a le tag "Ennemis"
-        if (collision.gameObject.CompareTag("Ennemis"))
+        if (Input.GetKeyDown(KeyCode.R))
         {
             RespawnAtRespawnPosition();
         }
