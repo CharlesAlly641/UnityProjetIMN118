@@ -306,7 +306,7 @@ GameObject:
   m_Component:
   - component: {fileID: 43581882}
   m_Layer: 0
-  m_Name: "D\xE9limitations"
+  m_Name: "D\xE9limitations Sc\xE8ne"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

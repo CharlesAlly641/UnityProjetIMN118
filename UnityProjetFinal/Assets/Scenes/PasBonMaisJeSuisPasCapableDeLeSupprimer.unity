@@ -491,6 +491,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 3
+  iFramesDuration: 0
+  numberOfFlashes: 0
 --- !u!114 &1322818167
 MonoBehaviour:
   m_ObjectHideFlags: 0
