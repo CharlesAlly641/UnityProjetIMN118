@@ -53,12 +53,17 @@ public class Health : MonoBehaviour
         {
             TakeDamage(1); // Par exemple, le joueur perd 1 point de vie
         }
-        else if (collision.gameObject.CompareTag("Health"))
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Health"))
         {
-            GainHealth(1); // Le joueur gagne 1 point de vie
-            Destroy(collision.gameObject); // Supprime l'objet de la scène
+            GainHealth(1);
+            Destroy(collision.gameObject);
         }
     }
+
 
     private void GameOver()
     {
