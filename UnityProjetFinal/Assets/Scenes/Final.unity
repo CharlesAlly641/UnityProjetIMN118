@@ -1782,6 +1782,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f26238e686bf825429de59d9970267f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickupSFX: {fileID: 0}
+  soundPlayerPrefab: {fileID: 0}
 --- !u!61 &1133825331
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2546,6 +2548,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 3
+  iFramesDuration: 0
+  numberOfFlashes: 0
 --- !u!114 &1622828742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3129,6 +3133,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f26238e686bf825429de59d9970267f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickupSFX: {fileID: 0}
+  soundPlayerPrefab: {fileID: 0}
 --- !u!61 &1918488359
 BoxCollider2D:
   m_ObjectHideFlags: 0
