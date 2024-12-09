@@ -340,7 +340,7 @@ Transform:
   m_GameObject: {fileID: 14277620}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.10593319, y: -3.49525, z: -10}
+  m_LocalPosition: {x: 0.8620291, y: -3.49528, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9341,6 +9341,8 @@ MonoBehaviour:
   startingHealth: 3
   iFramesDuration: 1
   numberOfFlashes: 3
+  soundPlayerPrefab: {fileID: 7581808549131150214, guid: 0941dc6241a04d6498a4eae2d0b33425, type: 3}
+  damageSFX: {fileID: 8300000, guid: 9e3ff14255e46bf4c94d9f7492461071, type: 3}
 --- !u!114 &1322818167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11097,7 +11099,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 755, y: 128}
+  m_AnchoredPosition: {x: 458, y: 245}
   m_SizeDelta: {x: -540, y: -260}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1555422038
