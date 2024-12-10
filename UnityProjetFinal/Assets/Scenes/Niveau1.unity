@@ -4091,6 +4091,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF Village Props - Platform 01 L X1
       objectReference: {fileID: 0}
+    - target: {fileID: 4460813094189888139, guid: 35ff5f2cc18840a4ca4ecf97ed2779c2, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 4460813094189888149, guid: 35ff5f2cc18840a4ca4ecf97ed2779c2, type: 3}
       propertyPath: m_SortingLayer
       value: 1
@@ -4318,7 +4322,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.7843685, y: -0.08818, z: -10}
+  m_LocalPosition: {x: -6.4698105, y: -0.087979995, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -16240,6 +16244,10 @@ PrefabInstance:
     - target: {fileID: 6072232795771451288, guid: faa8413b1d9e4cd48ab117de84514e7c, type: 3}
       propertyPath: m_Name
       value: PF Village Props - Platform 01 R X1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6072232795771451288, guid: faa8413b1d9e4cd48ab117de84514e7c, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6072232795771451289, guid: faa8413b1d9e4cd48ab117de84514e7c, type: 3}
       propertyPath: m_SortingLayer
