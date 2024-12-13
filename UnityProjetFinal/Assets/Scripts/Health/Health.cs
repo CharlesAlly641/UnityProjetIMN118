@@ -67,6 +67,10 @@ public class Health : MonoBehaviour
 
     private void GameOver()
     {
+        // Sauvegarder le nom de la scène actuelle
+        PlayerPrefs.SetString("LastScene", UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+
+
         // Désactive le personnage
         gameObject.SetActive(false);
         // Charge la scène de Game Over
