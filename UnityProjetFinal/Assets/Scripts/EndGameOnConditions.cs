@@ -10,16 +10,6 @@ public class EndGameOnConditions : MonoBehaviour
     {
         mustObject = GameObject.FindWithTag("MustObject");
         endObject = GameObject.FindWithTag("End");
-
-        if (mustObject == null)
-        {
-            Debug.LogError("L'objet avec le tag 'MustObject' est introuvable dans la scène !");
-        }
-
-        if (endObject == null)
-        {
-            Debug.LogError("L'objet avec le tag 'End' est introuvable dans la scène !");
-        }
     }
 
     void Update()

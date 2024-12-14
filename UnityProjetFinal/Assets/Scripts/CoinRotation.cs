@@ -6,16 +6,15 @@ public class CoinRotation : MonoBehaviour
 {
     public Vector3 RotationPerSecond;
 
-    // Paramètres pour le mouvement flottant
-    public float floatHeight = 0.5f; // Hauteur de déplacement
-    public float floatSpeed = 2f; // Vitesse de fluctuation
+    public float floatHeight = 0.5f; 
+    public float floatSpeed = 2f; 
 
     private Vector3 initialPosition;
 
     // Rotation cumulative
     void Start()
     {
-        // Enregistrer la position initiale pour le mouvement flottant
+        // Enregistrer la position initiale pour le mouvement
         initialPosition = transform.position;
     }
 
