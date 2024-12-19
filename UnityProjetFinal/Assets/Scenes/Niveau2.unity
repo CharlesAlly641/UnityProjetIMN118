@@ -3364,12 +3364,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -3541,8 +3541,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 608.4, y: -137.4}
-  m_SizeDelta: {x: 517.68, y: 50}
+  m_AnchoredPosition: {x: 423.8, y: 126.2}
+  m_SizeDelta: {x: 1225, y: 128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &614689368
 MonoBehaviour:
@@ -7570,8 +7570,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 608.4, y: -137.4}
-  m_SizeDelta: {x: 517.68, y: 50}
+  m_AnchoredPosition: {x: 423.8, y: 126.2}
+  m_SizeDelta: {x: 1225, y: 128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1229145693
 CanvasRenderer:
@@ -7997,7 +7997,7 @@ Transform:
   m_GameObject: {fileID: 1348123037}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.7841692, y: -3.94541, z: -10}
+  m_LocalPosition: {x: -1.7871275, y: -3.94541, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
