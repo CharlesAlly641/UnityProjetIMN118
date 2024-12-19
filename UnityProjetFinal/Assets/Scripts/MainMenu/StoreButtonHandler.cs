@@ -1,27 +1,22 @@
 using UnityEngine;
-using UnityEngine.UI; // Pour Text
+using TMPro;
 
 public class StoreButtonHandler : MonoBehaviour
 {
-    private Text buttonText;
+    public GameObject storeMessagePanel; // Panneau du message
+    public TextMeshProUGUI storeMessageText; // Texte du message
 
-    void Start()
-    {
-        buttonText = GetComponentInChildren<Text>(); // Rechercher le texte du bouton
-        if (buttonText != null)
-        {
-            buttonText.text = "Magasin (À venir bientôt)"; // Modifier le texte pour indiquer que c'est à venir
-        }
-    }
-
-    // Fonction appelée lorsque le bouton Magasin est cliqué
     public void OpenStore()
     {
-        // Si le magasin est pas encore disponible
-        Debug.Log("Magasin non disponible pour le moment.");
-        // Affiche un message ou une interface indiquant que le magasin est à venir
+        if (storeMessagePanel == null || storeMessageText == null)
+        {
+            Debug.LogWarning("StoreMessagePanel ou StoreMessageText n'est pas assigné !");
+            return;
+        }
 
-       
-        UnityEditor.EditorUtility.DisplayDialog("Magasin", "Le magasin est à venir bientôt.", "OK");
+        // Affiche le message "à venir"
+        storeMessagePanel.SetActive(true);
+        storeMessageText.text = "Le magasin est à venir bientôt.";
+        Debug.Log("Magasin non disponible pour le moment.");
     }
 }
