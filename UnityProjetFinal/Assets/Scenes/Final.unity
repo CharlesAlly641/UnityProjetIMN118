@@ -2550,6 +2550,8 @@ MonoBehaviour:
   startingHealth: 3
   iFramesDuration: 0
   numberOfFlashes: 0
+  soundPlayerPrefab: {fileID: 0}
+  damageSFX: {fileID: 0}
 --- !u!114 &1622828742
 MonoBehaviour:
   m_ObjectHideFlags: 0
